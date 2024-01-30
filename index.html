@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconic Celebrity</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+        .back {
+            background: radial-gradient(circle at -1% 57.5%, rgb(38, 77, 54) 0%, rgb(8, 164, 29) 90%);
+
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        h1 {
+            color: #ffffff;
+
+            font-family: 'Red Hat Display', sans-serif;
+            position: relative;
+            right: 172px;
+            padding-top: 22px;
+        }
+
+
+
+
+
+        @keyframes startMoves {
+
+            from {
+                text-shadow: 0 0 20px #914e0b;
+            }
+
+            to {
+                text-shadow: 0 0 30px #bba908, 0 0 10px #e77a0d;
+            }
+
+            to {
+                box-shadow: 0 0 40px 5px rgba(239, 239, 239, 0.9);
+            }
+        }
+
+
+        .nav-link {
+
+            color: #d6a574 !important;
+        }
+
+
+
+
+
+        .blue {
+            color: #000000;
+
+            font-family: 'Red Hat Display', sans-serif;
+            animation: rice 3s linear infinite;
+            margin-top: 44px;
+        }
+
+        @keyframes rice {
+
+            from {
+                text-shadow: 0 0 20px #1a1918;
+            }
+
+            to {
+                text-shadow: 0 0 30px #ffffff, 0 0 10px #ffffff;
+            }
+
+        }
+
+
+        h2 {
+
+            text-align: center;
+
+
+            color: aliceblue;
+
+
+
+            font-family: 'Red Hat Display', sans-serif;
+
+        }
+
+        .three {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            animation: rotateBackground 2s infinite linear;
+        }
+
+
+
+
+
+
+
+        .soar {
+            color: rgb(0, 0, 0);
+            font-family: 'Red Hat Display', sans-serif;
+            margin-top: 22px;
+        }
+
+
+
+
+        .rue {
+            font-size: small;
+            text-align: center;
+            font-family: 'Red Hat Display', sans-serif;
+            color: #ffffff;
+            animation: start 1s ease-in-out infinite alternate;
+
+        }
+
+        @keyframes start {
+            from {
+                text-shadow: 0 0 20px #010101;
+            }
+
+            to {
+                text-shadow: 0 0 30px #161515, 0 0 10px #000000;
+            }
+        }
+
+
+        .navbar {
+            border: 1px solid rgb(202, 174, 174);
+            border-radius: 12px;
+            animation: glow 1s infinite alternate;
+        }
+
+
+
+
+
+
+        .hero {
+
+            background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/774/original/norma.png?1705977798');
+
+
+
+
+
+            display: block;
+            margin: 0 auto;
+            background-size: cover;
+            background-position: 100%;
+            height: 70vh;
+
+            position: relative;
+            left: 222px;
+
+        }
+
+
+
+        .container {
+
+
+            margin: 0 auto;
+        }
+
+        .obv {
+
+
+
+
+            border-radius: 52px;
+            border: none;
+            padding-bottom: 22px;
+
+        }
+
+        @media (max-width: 798px) {
+            .obv {
+                margin: 0 auto;
+            }
+        }
+
+        img {
+            max-width: 100%;
+
+        }
+
+        .card {
+
+            text-align: center;
+
+
+        }
+
+
+
+        .peach {
+
+            color: #cc00ff;
+
+        }
+
+
+        .up {
+            color: #ffffff;
+            margin-bottom: 44px;
+
+        }
+
+        .one {
+
+            margin-top: 33px;
+
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #cc00ff;
+        }
+
+        .col-6 {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 798px) {
+            .col-6 {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="back">
+
+
+
+
+    <div id="particles-js"></div>
+
+
+
+
+
+    <div class="container">
+
+
+
+
+        <div class="hero">
+
+
+            <h1></h1>
+
+        </div><!--header-->
+
+
+
+
+
+
+        <h2 class="blue"></h2>
+
+        <div class="row ">
+            <div class="col-md-3">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/897/original/Screenshot_2024-01-23_at_8.47.12%E2%80%AFPM.png?1706060843"
+                    alt="" srcset="" class="obv">
+            </div>
+            <div class="col-8">
+                <p class="up one">
+                    Marilyn Monroe was born Norma Jeane Mortenson on June 1, 1926, at the Los Angeles General Hospital
+                    in Los Angeles,
+                    California. Her mother, Gladys Pearl Baker (née Monroe; 1902–1984), was born in Piedras Negras,
+                    Coahuila, Mexico,
+                    to a poor Midwestern family who migrated to California at the turn of the century.At age 15, Gladys
+                    had married John Newton Baker, an abusive man for nine years her senior. They had two children
+                    together,
+                    Robert (1918–1933) and Berniece (1919–2014). She successfully filed for divorce and sole custody of
+                    her two
+                    oldest in 1923, but Baker kidnapped the children soon after and moved with them to Kentucky.
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class=" mt-5">
+
+        </div>
+
+
+        <div id="dropdown1" class="peach">
+
+
+        </div>
+        <div id="phone"></div>
+
+        <h2 class="fancy_title">Some Title</h2>
+
+
+
+
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
+                    alt="" srcset="">
+
+
+
+
+                <p class="up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat
+                    vestibulum.
+                    Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce
+                    varius nec
+                    sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam
+                    lacinia, purus
+                    sapien sagittis libero, sit amet commodo dolor nulla id justo.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 mt-5">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
+                    alt="" srcset="">
+
+
+
+
+                <p class="up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat
+                    vestibulum.
+                    Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce
+                    varius nec
+                    sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam
+                    lacinia, purus
+                    sapien sagittis libero, sit amet commodo dolor nulla id justo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div> <!-- container -->
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    </div> <!-- second container -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/309/original/Screenshot_2024-01-05_at_1.32.54%E2%80%AFAM.png?1704436581"
+                    alt="" srcset="">
+            </div>
+            <div class="col-md-4 ">
+                <p class="up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat
+                    vestibulum.
+                    Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce
+                    varius nec
+                    sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam
+                    lacinia, purus
+                    sapien sagittis libero, sit amet commodo dolor nulla id justo.
+                </p>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div> <!--third container-->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
+                    alt="" srcset="">
+
+                <p class="up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat
+                    vestibulum.
+                    Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce
+                    varius nec
+                    sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam
+                    lacinia, purus
+                    sapien sagittis libero, sit amet commodo dolor nulla id justo.
+                </p>
+            </div>
+            <div class="col order-12">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
+                    alt="" srcset="">
+
+                <p class="up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat
+                    vestibulum.
+                    Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce
+                    varius nec
+                    sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam
+                    lacinia, purus
+                    sapien sagittis libero, sit amet commodo dolor nulla id justo.
+                </p>
+            </div>
+            <div class="col order-1">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
+                    alt="" srcset="">
+
+
+                <p class="up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat
+                    vestibulum.
+                    Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce
+                    varius nec
+                    sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam
+                    lacinia, purus
+                    sapien sagittis libero, sit amet commodo dolor nulla id justo.
+                </p>
+            </div>
+        </div>
+
+        <div class="col order-1">
+            <img class="jazz"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
+                alt="" srcset="">
+
+
+            <p class="up">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat vestibulum.
+                Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce varius
+                nec
+                sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam lacinia,
+                purus
+                sapien sagittis libero, sit amet commodo dolor nulla id justo.
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <!--STOP-->
+    <div class="col-3">
+        <div class="image-container">
+            <img class="toggle-image"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/905/original/pexels-rafael-cerqueira-4737484.jpg?1678907482"
+                alt="Image 1">
+        </div>
+
+        <button class="toggle-button">Toggle Image</button>
+
+    </div>
+
+
+
+
+    <button id="fork">click</button>
+
+
+
+
+
+    <ul class="nav justify-content-center mt-5">
+        <li class="nav-item">
+            <a class="nav-link active" href="https://www.shecodes.io/" target="_blank"
+                title="SheCodes profile">SheCodes</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="https://linkedin.com/in/athenah-c-2639251a0" target="_blank"
+                title="linkedin profile"> <i class="fa-brands fa-linkedin"></i></a>
+        </li>
+
+
+
+
+
+        <li class="timezx">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">© 2021 SheCodes All rights
+                reserved.</a>
+        </li>
+
+
+    </ul>
+
+    <form>
+
+
+        <div class="rue">
+            <h3>This website was coded by, Athenah Coucean</h3>
+
+        </div>
+    </form>
+
+
+
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            $(".fancy_title").lettering();
+        });
+
+
+
+
+        new Typewriter("h1", {
+            strings: ` Iconic Celebrity Challenge`,
+            autoStart: true,
+            cursor: "",
+            delay: 100,
+        });
+
+        new Typewriter(".blue", {
+            strings: ` June 1st, 1926`,
+            autoStart: true,
+            cursor: "",
+            delay: 100,
+        });
+
+
+
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#ffffff'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ffffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
