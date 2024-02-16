@@ -333,8 +333,11 @@ margin: 33px;
 
 
        
-<iframe id="video" src="https://drive.google.com/file/d/1N7B4QaXzIkLHSm6eRAcOBeCOc6Q3jFkx/preview" width="640"
-    height="480" allow="autoplay" style="display: none;"></iframe>
+
+<iframe src="https://drive.google.com/file/d/1N7B4QaXzIkLHSm6eRAcOBeCOc6Q3jFkx/preview" width="640" height="480"
+    allow="autoplay"></iframe>
+
+
         <div  id="content"  class="row "  style="display: none;">
  <h2 class="blue"></h2>
 
@@ -735,7 +738,10 @@ margin: 33px;
             "retina_detect": true
         });
 
-  
+    setTimeout(function () {
+            document.getElementById("video").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }, 10000);
     </script>
 
 
