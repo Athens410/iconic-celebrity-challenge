@@ -811,8 +811,11 @@ margin: 33px;
 
    document.querySelector('.cole').addEventListener('click', function () {
          var button = this;
-       button.classList.toggle('clicked');
 
+         var currentImage = button.style.backgroundImage;
+
+
+       button.classList.toggle('clicked');
 
        var sparkImg = document.querySelector('.spark');
        if (button.classList.contains('clicked')) {
