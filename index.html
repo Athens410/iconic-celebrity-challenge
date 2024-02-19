@@ -293,10 +293,6 @@ margin: 33px;
    
 }
 
-.spark {
-    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/961/original/Screenshot_2024-02-18_at_4.57.40%E2%80%AFPM.png?1708293524");
-}
-
 
 .jane {
     font-size: 24px;
@@ -810,7 +806,20 @@ margin: 33px;
             "retina_detect": true
         });
 
-   
+   document.querySelector('.cole').addEventListener('click', function () {
+        var button = this;
+      
+        button.classList.toggle('clicked');
+     
+
+
+        if (button.classList.contains('clicked')) {
+            button.style.backgroundImage = "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/979/original/Untitled_design_copy.png?1708304038')";
+        } else {
+            button.style.backgroundImage = "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/975/original/Untitled_design.png?1708303936')";
+        }
+    });
+
 
 
     </script>
