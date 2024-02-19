@@ -282,9 +282,7 @@ margin: 33px;
     color: #ffffff;
     padding: 50px;
 }
-.good{
-    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/961/original/Screenshot_2024-02-18_at_4.57.40%E2%80%AFPM.png?1708293524");
-}
+
 
 .jane {
     font-size: 24px;
@@ -805,13 +803,8 @@ margin: 33px;
 
 function newTime(){
 
-let image = document.querySelector(".spark");
-let second = document.querySelector(".good");
-let moonImage = document.querySelector("a#moon img");
-
-image.classList.toggle("hidden");
-    second.classList.toggle("hidden");
-    second.classList.toggle("hidden");
+    event.preventDefault();
+    document.querySelector("a#moon img").src = document.querySelector(".spark").classList.toggle("hidden") ? "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/637/original/Screenshot_2024-02-15_at_4.26.26%E2%80%AFPM.png?1708032398" : "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/982/original/Untitled_design.png?1708313705";
 }
 
 
