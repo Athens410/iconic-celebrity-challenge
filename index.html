@@ -246,7 +246,9 @@ body{
     opacity: 1;
 }
 
-
+.hidden {
+    display: none;
+}
 
 
         .up {
@@ -280,7 +282,9 @@ margin: 33px;
     color: #ffffff;
     padding: 50px;
 }
-
+.good{
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/961/original/Screenshot_2024-02-18_at_4.57.40%E2%80%AFPM.png?1708293524");
+}
 
 .jane {
     font-size: 24px;
@@ -492,8 +496,8 @@ margin: 33px;
             class="spark"        alt="" srcset="">
 
 
-<div class="good"></div>
-                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/961/original/Screenshot_2024-02-18_at_4.57.40%E2%80%AFPM.png?1708293524" alt="" srcset="">
+<div class="good" style="display: none;"></div>
+         
    
 
 
@@ -801,8 +805,8 @@ margin: 33px;
 
 function newTime(){
 
-let image = document.querySelector("spark");
-
+let image = document.querySelector(".spark");
+let second = document.querySelector(".good");
 
 }
 
