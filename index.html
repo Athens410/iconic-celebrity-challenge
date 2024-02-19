@@ -810,19 +810,28 @@ margin: 33px;
         });
 
    document.querySelector('.cole').addEventListener('click', function () {
-         var button = this;
-
-         var currentImage = button.style.backgroundImage;
-
-
+        var button = this;
        button.classList.toggle('clicked');
 
+
        var sparkImg = document.querySelector('.spark');
+       var currentImage = sparkImg.src;
+
+    var sparkImg = document.querySelector('.spark');
        if (button.classList.contains('clicked')) {
            sparkImg.src = 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/961/original/Screenshot_2024-02-18_at_4.57.40%E2%80%AFPM.png?1708293524';
        } else {
            sparkImg.src = 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/637/original/Screenshot_2024-02-15_at_4.26.26%E2%80%AFPM.png?1708032398';
        }
+
+       var coleButton = document.querySelector('.cole');
+       var currentButtonImage = coleButton.style.backgroundImage;
+
+       var newButtonImage = currentButtonImage.includes('Untitled_design_copy.png') ?
+           "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/975/original/Untitled_design.png?1708303936')" :
+           "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/979/original/Untitled_design_copy.png?1708304038')";
+
+       coleButton.style.backgroundImage = newButtonImage;
 
 
        newTime();
