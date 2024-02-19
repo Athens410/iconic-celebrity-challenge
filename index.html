@@ -23,6 +23,10 @@
 <script src="
 https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 "></script>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+
     <style>
       
 body{
@@ -674,11 +678,21 @@ margin: 33px;
 
 
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 
 
     <script>
 
-
+     $(document).ready(function () {
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
 
         new Typewriter("h1", {
             strings: ` Iconic Celebrity Challenge`,
@@ -849,7 +863,6 @@ margin: 33px;
 
 
     </script>
-
 
 
 
