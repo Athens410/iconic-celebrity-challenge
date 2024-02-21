@@ -74,7 +74,17 @@ body{
      animation: moveUpDown 3s infinite;
 }
 
-
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
         .nav-link {
 
             color: #ffffff !important;
