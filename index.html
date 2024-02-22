@@ -33,6 +33,18 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 body{
     background-color: #000000;
 }
+
+ .swiper-container {
+        overflow: auto;
+        height: 300px;
+        background-color: white; 
+    }
+    .swiper-container:hover {
+        overflow-y: scroll; 
+    }
+
+
+
     #particles-js {
     position: fixed;
     top: 0;
@@ -342,19 +354,11 @@ margin-bottom: -33px;
 font-size: 16px;
 
 }
-    swiper-container {
-      width: 100%;
-      height: 100%;
-      background-color: aliceblue;
-    }
 
-    swiper-slide {
-      font-size: 18px;
-      height: auto;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 30px;
-    }
+
+
+
+    
     </style>
 </head>
 
@@ -884,15 +888,7 @@ font-size: 16px;
 
     <script>
 
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Swiper
-        const swiper = new Swiper('.mySwiper', {
-            direction: 'vertical',
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    });
+  
     setTimeout(function () {
             var iframe = document.getElementById('iframe');
             var contentDiv = document.getElementById('content');
@@ -1069,7 +1065,7 @@ font-size: 16px;
 
     </script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
 
 </html>
