@@ -23,11 +23,10 @@
 <script src="
 https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 "></script>
-<!--swipe test-->
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
 
     <style>
       
@@ -720,7 +719,7 @@ font-size: 16px;
 
  
 
-
+<div class="container">
 
 <swiper-container class="mySwiper" scrollbar="true" direction="vertical" slides-per-view="auto" free-mode="true"
     mousewheel="true">
@@ -845,7 +844,7 @@ font-size: 16px;
 </swiper-container>
 
 
-
+</div>
 <script src="particles.js"></script>
 
     <ul class="nav justify-content-center mt-5">
@@ -885,29 +884,15 @@ font-size: 16px;
 
     <script>
 
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Swiper
+        const swiper = new Swiper('.mySwiper', {
+            direction: 'vertical',
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
     });
-
-
     setTimeout(function () {
             var iframe = document.getElementById('iframe');
             var contentDiv = document.getElementById('content');
@@ -1080,15 +1065,6 @@ font-size: 16px;
 
 
 
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Swiper
-        const swiper = new Swiper('.mySwiper', {
-            direction: 'vertical',
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    });
 
 
     </script>
