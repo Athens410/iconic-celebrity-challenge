@@ -790,6 +790,29 @@ font-size: 16px;
             el: '.swiper-scrollbar',
         },
     });
+
+
+    const swap = new Swiper('.try', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
   
     setTimeout(function () {
             var iframe = document.getElementById('iframe');
