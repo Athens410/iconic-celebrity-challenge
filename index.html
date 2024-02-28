@@ -59,10 +59,30 @@ body{
 
 
 
- 
+ .swiper {
+  width: 600px;
+  height: 300px;
+}
    
 
-    
+      .swiper {
+            width: 600px;
+            height: 300px;
+       
+        }
+
+        .swiper-slide {
+            width: 100%; 
+            height: 100%; 
+            display: flex;
+
+            
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: rgb(255, 255, 255); 
+        }
+
 .cole{
 
   display: inline-block;
@@ -674,7 +694,25 @@ font-size: 16px;
 </div>
 <div class="container">
 <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
 
 
 
@@ -719,7 +757,27 @@ font-size: 16px;
 
 
     <script>
-   
+   const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
    
 
   
