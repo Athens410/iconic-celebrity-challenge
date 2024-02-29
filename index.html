@@ -37,30 +37,11 @@ body{
   
 }
 
+.back{
 
 
-
-
-    #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2; 
-    
-}  
-
-        h1 {
-            color: #ffffff;
-
-            font-family: 'Red Hat Display', sans-serif;
-            position: relative;
-            right: 172px;
-            padding-top: 22px;
-        }
-
-
+    overflow-x: hidden;
+}
 
  .swiper {
   width: 600px;
@@ -85,6 +66,29 @@ body{
             font-size: 24px;
             background-color: rgb(255, 255, 255); 
         }
+
+    #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+    overflow: hidden;
+}  
+
+        h1 {
+            color: #ffffff;
+
+            font-family: 'Red Hat Display', sans-serif;
+            position: relative;
+            right: 172px;
+            padding-top: 22px;
+        }
+
+
+
+
 
 .cole{
 
@@ -370,7 +374,7 @@ font-size: 16px;
 <body >
 
 
-
+<div class="back">
 
      <div id="particles-js"></div>
 
@@ -708,7 +712,7 @@ font-size: 16px;
 
  
 </div>
-
+</div>
     <script>
    const swiper = new Swiper('.swiper', {
         // Optional parameters
