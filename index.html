@@ -711,7 +711,7 @@ about persistence and taking every opportunity available, no matter how small, t
 
 
         <li class="timezx">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">© 2024 SheCodes All rights
+            <a class="nav-link disabled"  id="copyright-year" href="#" tabindex="-1" aria-disabled="true">©  SheCodes All rights
                 reserved.</a>
         </li>
 
@@ -747,7 +747,9 @@ about persistence and taking every opportunity available, no matter how small, t
 
     <script>
   
- 
+ const year = new Date().getFullYear();
+    document.getElementById('copyright-year').textContent = `Copyright © ${year} All Rights Reserved.`;
+
     setTimeout(function () {
             var iframe = document.getElementById('iframe');
             var contentDiv = document.getElementById('content');
