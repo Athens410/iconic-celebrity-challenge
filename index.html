@@ -37,7 +37,10 @@ body{
 
 
 
+.back{
 
+    background-color: aqua;
+}
    
 
     @keyframes animate {
@@ -383,7 +386,7 @@ font-size: 16px;
 </head>
 
 
-<body >
+<body class="back">
 
 
 
@@ -691,6 +694,7 @@ about persistence and taking every opportunity available, no matter how small, t
  
 
 
+
     <ul class="nav justify-content-center mt-5">
         <li class="nav-item">
             <a class="nav-link active" href="https://www.shecodes.io/" target="_blank"
@@ -711,8 +715,8 @@ about persistence and taking every opportunity available, no matter how small, t
 
 
         <li class="timezx">
-            <a class="nav-link disabled"  id="copyright-year" href="#" tabindex="-1" aria-disabled="true">©  SheCodes All rights
-                reserved.</a>
+            <a class="nav-link disabled"  id="copyright-year" href="#" tabindex="-1" aria-disabled="true">©  
+               </a>
         </li>
 
 <i class="fa-solid fa-envelope" style="color: #B197FC;"></i>
@@ -732,7 +736,6 @@ about persistence and taking every opportunity available, no matter how small, t
 </div>
 </div>
 
-
 <section>
     <div class=" star star1"></div>
     <div class=" star star2"></div>
@@ -749,6 +752,9 @@ about persistence and taking every opportunity available, no matter how small, t
   
  const year = new Date().getFullYear();
     document.getElementById('copyright-year').textContent = `Copyright © ${year} All Rights Reserved.`;
+
+
+
 
     setTimeout(function () {
             var iframe = document.getElementById('iframe');
@@ -812,7 +818,18 @@ about persistence and taking every opportunity available, no matter how small, t
 
 
 
+let button = document.querySelector(".push");
 
+button.addEventListener("click", newTime);
+
+
+function newTime(){
+
+let body = document.querySelector("body");
+body.classList.toggle("back")
+
+
+}
 
     </script>
 
