@@ -387,14 +387,15 @@ font-size: 16px;
 
 .h3-background {
 background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/883/original/1950.png?1709784958");
-    background-size: cover;
+  background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 20px 0;
-    color: #ffffff;
-     /* Set text color to white */
-
-     margin-bottom: 70px;
+    padding: 20px;
+    color: #a0cfae;
+    /* Set text color to white */
+    margin-bottom: 90px;
+    position: relative; /* Ensure the z-index works properly */
+    z-index: -1;
 }
 
 
@@ -627,9 +628,11 @@ about persistence and taking every opportunity available, no matter how small, t
 </div>
 <div class="container-fluid"><!--1950-->
     <div class="row">
-        <div class="col-sm-3">
+        <div class="around">
 
             <h3 class="h3-background">1950</h3>
+
+            
         </div>
         <p class="rock">
             By 1950, Marilyn Monroe was on the cusp of becoming a household name. Her strategic career choices and
