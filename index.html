@@ -824,7 +824,27 @@ about persistence and taking every opportunity available, no matter how small, t
     document.getElementById('copyright-year').textContent = `Copyright © ${year} All Rights Reserved.`;
 
 
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
 
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
 
     setTimeout(function () {
             var iframe = document.getElementById('iframe');
