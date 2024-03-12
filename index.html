@@ -898,7 +898,14 @@ institutionalized—and that I was born 'out of wedlock' and never had any conta
         // Optional parameters
         direction: 'vertical',
         loop: true,
-
+        effect: 'coverflow',
+        coverflowEffect: {
+            // Customize the depth and modifier
+            depth: 100,
+            modifier: 1,
+            // Add CSS animation
+            slideShadows: false,
+        },
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
