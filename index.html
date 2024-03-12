@@ -707,6 +707,10 @@ institutionalized—and that I was born 'out of wedlock' and never had any conta
     <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need navigation buttons -->
     <div class="swiper-scrollbar"></div>
 
     <!-- If we need scrollbar -->
@@ -722,9 +726,7 @@ institutionalized—and that I was born 'out of wedlock' and never had any conta
 
 
 
-    </div>
-
-</div>
+    
 
 
 <br>
@@ -923,6 +925,10 @@ institutionalized—and that I was born 'out of wedlock' and never had any conta
         pagination: {
             el: '.swiper-pagination',
         },
+       navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+       },
 
        
         // And if we need scrollbar
