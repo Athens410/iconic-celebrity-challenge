@@ -356,7 +356,7 @@ font-size: 16px;
     color: rgb(255, 255, 255);
      text-align: center;
    background-color: #000000b2;
-   margin: 22px;
+  
      font-size: 12px;
         font-family: "Montserrat", sans-serif;
       
@@ -419,10 +419,11 @@ background-color: #B197FC;
 .ocean{
 
     color: #6c03ff;
+    margin-top: 55px;
 }
 
 .swiper {
-  width: 900px;
+  width: 600px;
   height: 300px;
 background-color: #5b547085;
   padding: 22px;
@@ -430,34 +431,33 @@ background-color: #5b547085;
   
 }
 .swiper.empire{
-  width: 900px;
+  width: 600px;
   height: 300px;
 background-color: #1d1e1d;
   padding: 22px;
 
 }
-@media (max-width: 567px) {
-    /* Add your styles for smaller screens here */
-    .swiper-slide {
-        /* Example styles */
-        width: 100%;
-    }
 
- 
+
+
+ .swiper-slide img {
+   max-height: 48%; 
+    width: auto; 
+    padding: 18px;
+    margin-bottom: 44px;
 }
 
-
+.swiper-slide{
+margin: auto;
+ font-family: "Montserrat", sans-serif;
+    
+    text-align: center;
+}
 
 .down{
 
 padding: 44px;
 
-}
-.swiper-slide{
-
- font-family: "Montserrat", sans-serif;
-    
-    text-align: center;
 }
 
 
@@ -763,7 +763,7 @@ contract was not renewed in August 1947. Despite this early career hiccup, Maril
 her ambitions. This period was crucial as it taught her resilience and the importance of perseverance in the face of
 rejection. Marilyn continued to refine her acting skills, attending acting classes and seeking out opportunities in
 modeling to maintain visibility and income. This year underscored the reality of the film industry's challenges but also
-served a
+served as a critical learning and growth phase for her.
 
 
             </div>
@@ -776,8 +776,13 @@ served a
     <h3 class="ocean">1947</h3>
 
 
-
   
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/653/original/Screenshot_2024-03-11_at_6.00.20%E2%80%AFPM.png?1710194431"
+    alt="" srcset="" >
+
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/653/original/Screenshot_2024-03-11_at_6.00.20%E2%80%AFPM.png?1710194431"
+    alt="" srcset="">
+
 
 </div>
    
@@ -1291,18 +1296,6 @@ minds of all who are touched by her extraordinary legacy.</p>
 
 
 
-let button = document.querySelector(".push");
-
-button.addEventListener("click", newTime);
-
-
-function newTime(){
-
-let body = document.querySelector("body");
-body.classList.toggle("back")
-
-
-}
 
     </script>
 
