@@ -318,23 +318,9 @@ color: rgb(255, 255, 255);
 
     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/961/original/Screenshot_2024-02-18_at_4.57.40%E2%80%AFPM.png?1708293524');
 }
- .iframe-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-   
-    }
 
-    .iframe-wrapper {
-        width: 640px; 
-      
-    }
 
-    .iframe-wrapper iframe {
-        width: 100%;
-        height: 480px; 
-    }
+    
 .tok{
 margin-bottom: -33px;
     color: rgb(249, 118, 194);
@@ -489,6 +475,11 @@ padding: 44px;
 font-family: "Montserrat", sans-serif;
     color: rgb(128, 0, 255);
 
+}
+
+.swipe{
+
+    color: aqua;
 }
     </style>
 
@@ -742,9 +733,19 @@ institutionalized—and that I was born 'out of wedlock' and never had any conta
 
 
 
-<div class="container-fluid d-flex pt-5">
+<div class="container">
 
-
+<div class="swipe">
+    <div>your content</div>
+    <div>your dog</div>
+    <div>your fish</div>
+    <div>your blue</div>
+    <div>your red</div>
+    <div>your lilc</div>
+    <div>your sarah</div>
+    <div>your kenz</div>
+    <div>your jojo</div>
+</div>
 </div>
 
 
@@ -1081,12 +1082,23 @@ minds of all who are touched by her extraordinary legacy!</p>
 
 
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 
 
     <script>
- 
 
+    $(document).ready(function () {
+        $('.swipe').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+    });
  const year = new Date().getFullYear();
     document.getElementById('copyright-year').textContent = `Copyright © ${year} All Rights Reserved.`;
 
